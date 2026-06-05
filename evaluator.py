@@ -59,7 +59,6 @@ def evaluate_5_cards(cards):
         kickers = sorted([k for k, v in value_counts.items() if v == 1], reverse=True)
         return (2, pair_val, *kickers)
         
-    # High Card
     return (1, *values)
 
 def evaluate_7_cards(cards):
