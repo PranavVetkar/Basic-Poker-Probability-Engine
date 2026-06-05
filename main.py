@@ -20,7 +20,6 @@ def main():
             
         player_cards = [Card(c) for c in player_card_strs]
         
-        # Check for duplicates in player hand
         if len(set(player_cards)) != 2:
             print("Error: Duplicate cards detected in hole cards.")
             return
